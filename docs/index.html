@@ -409,15 +409,18 @@ footer a:hover { color: #ffab01; }
   margin-bottom: 20px;
 }
 .peon-avatar {
-  width: 166px;
-  height: 161px;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  filter: drop-shadow(0 0 30px rgba(255,171,1,0.25));
-  transition: filter 0.3s;
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow:
+    0 0 40px rgba(255,171,1,0.2),
+    0 0 80px rgba(255,171,1,0.1);
+  transition: box-shadow 0.3s;
 }
 .peon-avatar:hover {
-  filter: drop-shadow(0 0 50px rgba(255,171,1,0.45));
+  box-shadow:
+    0 0 50px rgba(255,171,1,0.35),
+    0 0 100px rgba(255,171,1,0.15);
 }
 
 /* --- Terminal sound toggle --- */
